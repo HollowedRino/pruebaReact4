@@ -1,5 +1,5 @@
-function ListadoComponentes({numeros}){
-    let listItems = numeros.map(n => <li>{n}</li>);
+function ListadoComponentes({personas}){
+    let listItems = personas.map(per => <li>{ per.name.first }</li>);
     return(
         <>
             <ul>
