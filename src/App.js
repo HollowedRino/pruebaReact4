@@ -21,6 +21,17 @@ function App() {
     setListaPersonas([
       ...data.results
     ]);
+
+    localStorage.setItem("key01", "valor01");
+    const valor = localStorage.getItem("key01");
+    console.log(valor);
+
+    let obj1 = {nombre: "Juan", apellido: "Perez", edad: 30};
+    localStorage.setItem("persona", JSON.stringify(obj1));
+
+    sessionStorage.setItem("skey01", "valor01");
+    const svalor = sessionStorage.getItem("skey01");
+    console.log(svalor);
   }
 
   return (
